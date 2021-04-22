@@ -37,8 +37,6 @@ public class registrierungservlet extends HttpServlet {
 		form.setPasswort(request.getParameter("passwort"));
 		form.setPasswortbestätigen(request.getParameter("passwortbestätigen"));
 
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
 		final HttpSession session = request.getSession();
 		session.setAttribute("form", form);
 
@@ -47,9 +45,6 @@ public class registrierungservlet extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 
-		// HTML-Ergebnis senden
-		PrintWriter out = response.getWriter();
-		
 		final RequestDispatcher dispatcher = request.getRequestDispatcher("registrierung.jsp");
 		dispatcher.forward(request, response);
 	}

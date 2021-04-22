@@ -5,9 +5,7 @@
 <head>
 <meta charset="utf-8">
 <title>Index</title>
-<Location "/">
-  AllowMethods GET POST OPTIONS
-</Location>
+
 </head>
 
 <body>
@@ -21,33 +19,30 @@
 
 		<b>Benutzername: </b><br> <input type="text" name="benutzername"
 			size="30" maxlength="40" placeholder="Bitte Benutzername eingeben"
-			required> <br>
-		<br> <b>Vorname: </b><br> <input type="text" name="vorname"
-			size="30" maxlength="40" placeholder="Bitte Vorname eingeben"
-			required> <br>
-		<br> <b>Nachname:</b><br> <input type="text" name="nachname"
-			size="30" maxlength="40" placeholder="Bitte Nachname eingeben"
-			required> <br>
-		<br> <b>Geschlecht:</b> <br> <input type="radio"
+			required> <br> <br> <b>Vorname: </b><br> <input
+			type="text" name="vorname" size="30" maxlength="40"
+			placeholder="Bitte Vorname eingeben" required> <br> <br>
+		<b>Nachname:</b><br> <input type="text" name="nachname" size="30"
+			maxlength="40" placeholder="Bitte Nachname eingeben" required>
+		<br> <br> <b>Geschlecht:</b> <br> <input type="radio"
 			name="geschlecht" id="g1" value="männlich"> <label for="g1">
 			Männlich </label> <br> <input type="radio" name="geschlecht" id="g2"
 			value="weiblich"> <label for="g2"> Weiblich </label> <br>
 
 		<input type="radio" name="geschlecht" id="g3"
-			value="anderesgeschlecht"> <label for="g3"> Andere </label>
-		<br> <br> <b>Geburtstag: </b><br> <input type="date"
-			name="geburtstag" size="8" required> <br>
-		<br> <b>Lieblingsgame: </b><br> <input type="text"
-			name="lieblingsgame" size="30" maxlength="40"
-			placeholder="Bitte Lieblingsgame eingeben" required> <br>
-		<br> <b>Absolutes Hobby:</b><br> <input type="text"
-			name="hobby" size="30" maxlength="40"
-			placeholder="Bitte Hobby eingeben" required> <br>
-		<br> <b>Lieblingsprogrammiersprachen: </b><br>
-		<br> <input type="checkbox" name="programmiersprachen" id="p1"
-			value="java"> <label for="p1"> Java </label> <br> <input
-			type="checkbox" name="programmiersprachen" id="p2" value="c++">
-		<label for="p2"> C++ </label> <br> <input type="checkbox"
+			value="anderesgeschlecht"> <label for="g3"> Andere </label> <br>
+		<br> <b>Geburtstag: </b><br> <input type="date"
+			name="geburtstag" size="8" required> <br> <br> <b>Lieblingsgame:
+		</b><br> <input type="text" name="lieblingsgame" size="30"
+			maxlength="40" placeholder="Bitte Lieblingsgame eingeben" required>
+		<br> <br> <b>Absolutes Hobby:</b><br> <input
+			type="text" name="hobby" size="30" maxlength="40"
+			placeholder="Bitte Hobby eingeben" required> <br> <br>
+		<b>Lieblingsprogrammiersprachen: </b><br> <br> <input
+			type="checkbox" name="programmiersprachen" id="p1" value="java">
+		<label for="p1"> Java </label> <br> <input type="checkbox"
+			name="programmiersprachen" id="p2" value="c++"> <label
+			for="p2"> C++ </label> <br> <input type="checkbox"
 			name="programmiersprachen" id="p3" value="python"> <label
 			for="p3"> Python </label> <br> <input type="checkbox"
 			name="programmiersprachen" id="p4" value="php"> <label
@@ -61,37 +56,34 @@
 			name="programmiersprachen" id="p8" value="assemblylanguage">
 		<label for="p8"> Assembly Language </label> <br> <input
 			type="checkbox" name="programmiersprachen" id="p9" value="c">
-		<label for="p9"> C </label> <br>
-		<br> Andere: <input type="text" name="weiteresprachen" size="30"
-			maxlength="40" placeholder="Bitte andere eingeben"> <br>
-		<br> <b>Profildbild auswählen:</b><br> <input type="file"
-			name="profilbild" accept="image/*" required> <br> <br>
-		<b>Kommandozentrale auswählen:</b><br> <input type="file"
-			name="profilbild" accept="image/*"> <br> <br> <b>Email:
-		</b><br> <input type="email" name="email" size="30"
-			placeholder="Bitte Email eingeben" required> <br>
-		<br> <b>Email bestätigen:</b> <br> <input type="email"
+		<label for="p9"> C </label> <br> <br> Andere: <input
+			type="text" name="weiteresprachen" size="30" maxlength="40"
+			placeholder="Bitte andere eingeben"> <br> <br> <b>Profildbild
+			auswählen:</b><br> <input type="file" name="profilbild"
+			accept="image/*" required> <br> <br> <b>Kommandozentrale
+			auswählen:</b><br> <input type="file" name="profilbild"
+			accept="image/*"> <br> <br> <b>Email: </b><br>
+		<input type="email" name="email" size="30"
+			placeholder="Bitte Email eingeben" required> <br> <br>
+		<b>Email bestätigen:</b> <br> <input type="email"
 			name="emailbestätigen" size="30" placeholder="Bitte Email bestätigen"
-			required> <br>
-		<br> <b>Passwort: </b><br> <input type="password"
-			name="passwort" size="30" placeholder="Bitte Passwort eingeben"
-			required> <br>
-		<br> <b>Passwort bestätigen: </b><br> <input type="password"
+			required> <br> <br> <b>Passwort: </b><br> <input
+			type="password" name="passwort" size="30"
+			placeholder="Bitte Passwort eingeben" required> <br> <br>
+		<b>Passwort bestätigen: </b><br> <input type="password"
 			name="passwortbestätigen" size="30"
-			placeholder="Bitte Passwort eingeben" required> <br>
-		<br> <br>
+			placeholder="Bitte Passwort eingeben" required> <br> <br>
+		<br>
 
 
 		<button type="submit" name="bestätigen" value="submit">
 			<b>Absenden</b>
 		</button>
-		<br>
-		<br>
+		<br> <br>
 		<button type="reset" name="leeren" value="submit">
 			<b>Formular leeren</b>
 		</button>
-		<br>
-		<br>
+		<br> <br>
 	</form>
 
 </body>

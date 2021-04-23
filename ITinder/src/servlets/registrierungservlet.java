@@ -1,7 +1,7 @@
 package servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,11 +41,11 @@ public class registrierungservlet extends HttpServlet {
 		session.setAttribute("form", form);
 
 		// HTTP-Header setzen
-		response.setStatus(HttpServletResponse.SC_OK); // nicht zwingend erforderlich; ist der default-Wert
-		response.setContentType("text/html");
-		response.setCharacterEncoding("UTF-8");
+		//response.setStatus(HttpServletResponse.SC_OK); // nicht zwingend erforderlich; ist der default-Wert
+		//response.setContentType("text/html");
+		//response.setCharacterEncoding("UTF-8");
 
-		final RequestDispatcher dispatcher = request.getRequestDispatcher("registrierung.jsp");
+		final RequestDispatcher dispatcher = request.getRequestDispatcher("html/registrierung.jsp");
 		dispatcher.forward(request, response);
 	}
 

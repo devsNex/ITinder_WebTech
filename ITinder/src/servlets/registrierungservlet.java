@@ -45,7 +45,7 @@ public class registrierungservlet extends HttpServlet {
 		//response.setContentType("text/html");
 		//response.setCharacterEncoding("UTF-8");
 
-		final RequestDispatcher dispatcher = request.getRequestDispatcher("html/registrierung.jsp");
+		final RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/registrierung.jsp");
 		dispatcher.forward(request, response);
 	}
 

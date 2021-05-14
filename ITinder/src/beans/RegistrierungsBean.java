@@ -6,15 +6,20 @@ public class RegistrierungsBean {
 	private String benutzername;
 	private String vorname;
 	private String nachname;
+	
 	// checkbox??
 	private String geschlecht;
+	
 	private Date geburtstag;
 	private String lieblingsgame;
 	private String hobby;
+	
 	// sprachen??
 	private String [] programmiersprachen;
 	private String weiteresprachen;
+	
 	// profilbild
+	
 	private String email;
 	private String emailbestätigen;
 	private String passwort;

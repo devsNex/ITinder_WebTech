@@ -21,7 +21,7 @@ public class RegistrierungsBean {
 	// profilbild
 	
 	private String email;
-	private String emailbestätigen;
+	private String emailbestätigen; 
 	private String passwort;
 	private String passwortbestätigen;
 	

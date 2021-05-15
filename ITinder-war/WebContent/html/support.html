@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<!--  Fabian Jirges -->
+<head>
+<meta charset="utf-8">
+<title>Supportseite, ITinder</title>
+<link rel="stylesheet" type="text/css" href="../css/support.css">
+</head>
+<body>
+	<img src="../img/logo.jpeg" width="400" height="150" alt="Logo">
+	<ul>
+		<li>Startseite</li>
+		<li>Login</li>
+		<li>Registrierung</li>
+		<li>Support</li>
+		<li>Profil</li>
+		<li>Nachricht</li>
+	</ul>
+
+	<h3>Sie haben ein Problem?</h3>
+	<h4>Lassen Sie es uns wissen!</h4>
+	<br>
+	<form action="support" method="post">
+
+		<label for="text">Anmerkung:</label> <br>
+		<br>
+		<textarea id="text" name="text" cols="35" rows="4"
+			placeholder="Hier Ihre Anmerkung"></textarea>
+		<br>
+		<br> <input type="submit" value="Senden">
+
+	</form>
+	<h3>Wie zufrieden sind Sie?</h3>
+
+	<form action="rating" method="post">
+		<input type="radio" name="room" id="r1" value="sehr zufrieden">
+		<label for="r1">sehr zufrieden </label> <br> <input type="radio"
+			name="room" id="r2" value="zufrieden"> <label for="r2">
+			zufrieden </label> <br> <input type="radio" name="room" id="r3"
+			value="unzufrieden"> <label for="r3"> unzufrieden </label> <br>
+
+		<input type="radio" name="room" id="r4" value="sehr unzufrieden">
+		<label for="r4">sehr unzufrieden </label> <br>
+		<br> <input type="submit" value="Senden">
+	</form>
+	<footer>
+		<br /> <br /> <br />
+		<p>
+			&copy; ITinder 2021 Weimann, Jirges, Jeske <br> <br> <a
+				href="impressum.html">Impressum</a>
+		</p>
+	</footer>
+</body>

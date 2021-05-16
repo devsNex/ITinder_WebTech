@@ -2,6 +2,7 @@ package servlets;
 
 import java.io.IOException;
 
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,20 +37,15 @@ public class registrierungservlet extends HttpServlet {
 		form.setPasswort(request.getParameter("passwort"));
 		form.setPasswortbestätigen(request.getParameter("passwortbestätigen"));
 
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
 		final HttpSession session = request.getSession();
 		session.setAttribute("form", form);
 
 		// HTTP-Header setzen
-		response.setStatus(HttpServletResponse.SC_OK); // nicht zwingend erforderlich; ist der default-Wert
-		response.setContentType("text/html");
-		response.setCharacterEncoding("UTF-8");
+		//response.setStatus(HttpServletResponse.SC_OK); // nicht zwingend erforderlich; ist der default-Wert
+		//response.setContentType("text/html");
+		//response.setCharacterEncoding("UTF-8");
 
-		// HTML-Ergebnis senden
-//		response.getWriter().println(output);
-		
-		final RequestDispatcher dispatcher = request.getRequestDispatcher("registrierung.jsp");
+		final RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/registrierung.jsp");
 		dispatcher.forward(request, response);
 	}
 
